@@ -1,3 +1,5 @@
+// cre: Nguyen Hoang Hung - Train VOI 2024
+
 #include <bits/stdc++.h>
 
 #define FOR(i,a,b) for(int i=(a),_b=(b); i<=_b; i++)
@@ -51,6 +53,15 @@ const int maxN = 1e6;
 const ll inf = 1e18+7;
 const int MOD = 1e9 + 7;
 const double PI = acos(-1);
+
+/*
+-------------------------------------------------------------------------------------
+    END OF TEMPLATE
+-------------------------------------------------------------------------------------
+    Nguyen Hoang Hung - catlover
+    Training for VOI24 gold medal
+-------------------------------------------------------------------------------------
+*/
 
 void solve() {
 
