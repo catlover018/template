@@ -88,6 +88,19 @@ BigInt bigint(string s) {
     return a;
 }
 
+BigInt bigint(int x) {
+
+  BigInt a;
+
+  while(x)
+  {
+    a.pb(x%base);
+    x /= base;
+  }
+
+  return a;
+}
+
 void Print(const BigInt a) {
     int limit = SZ(a);
     printf("%d", a[limit - 1]);
@@ -188,3 +201,4 @@ int main() {
 
     return 0;
 }
+
