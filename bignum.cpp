@@ -176,6 +176,14 @@ bool operator < (BigInt a, BigInt b) {
     return false;
 }
 
+bool operator == (BigInt a, BigInt b) {
+  fix(a); fix(b);
+  if(SZ(a) != SZ(b)) return false;
+  FORD(i, SZ(a) - 1, 0)
+    if(a[i] != b[i]) return false;
+  return true;
+}
+
 void solve() {
     string sa, sb;  cin >> sa >> sb;
     BigInt a = bigint(sa);
